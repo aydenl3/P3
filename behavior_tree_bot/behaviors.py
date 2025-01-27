@@ -53,9 +53,16 @@ def spread_to_closest_enemy_planet(state):
     for planet in state.enemy_planets():
         if state.distance(strongest_planet.ID,planet.ID) < state.distance(strongest_planet.ID,closest_planet.ID):
             closest_planet = planet
-    return issue_order(state, strongest_planet.ID, closest_planet.ID, calculate_troops_for_distance(state,strongest_planet.ID, closest_planet.ID))
+    return issue_order(state, strongest_planet.ID, closest_planet.ID, calculate_troops_for_distance(state,strongest_planet, closest_planet))
 
-#HELPER FUNCTION
+
+
+#HELPER FUNCTIONS
 def calculate_troops_for_distance(state,home_planet,enemy_planet):
      troops_needed = enemy_planet.num_ships + state.distance(home_planet.ID,enemy_planet.ID) * enemy_planet.growth_rate + 1
      return troops_needed
+
+def calculate_min_troops_for_neutral(state,home_planet,neutral_planet):
+    troops_needed = neutral_planet.num_ships + 1
+    return troops_needed
+    
