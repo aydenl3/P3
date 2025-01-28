@@ -2,11 +2,11 @@ INFO:root:
 Selector: High Level Ordering of Strategies
 | Sequence: Offensive Strategy
 | | Check: have_largest_fleet
-| | Action: repell_neighbors_if_stronger
+| | Action: attack_weak_enemy_planets
 | Sequence: Spread Strategy
 | | Check: if_neutral_planet_available
-| | Action: spread_to_weakest_neutral_planet
-| Action: repell_neighbors_if_stronger
+| | Action: spread_to_multiple_neutral_planets
+| Action: attack_weak_enemy_planets
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
@@ -16,9 +16,29 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Order:1 17 50.0
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Order:1 18 6.0
+DEBUG:root:Order:1 11 14.0
+DEBUG:root:Order:1 12 14.0
+DEBUG:root:Order:1 5 24.0
+DEBUG:root:Order:1 6 24.0
+DEBUG:root:Bad order:1 12.0 39.0
+DEBUG:root:Bad order:1 12.0 57.0
+DEBUG:root:Bad order:1 12.0 57.0
+DEBUG:root:Bad order:1 12.0 60.0
+DEBUG:root:Bad order:1 12.0 60.0
+DEBUG:root:Bad order:1 12.0 61.0
+DEBUG:root:Bad order:1 12.0 61.0
+DEBUG:root:Bad order:1 12.0 61.0
+DEBUG:root:Bad order:1 12.0 61.0
+DEBUG:root:Bad order:1 12.0 83.0
+DEBUG:root:Bad order:1 12.0 83.0
+DEBUG:root:Bad order:1 12.0 85.0
+DEBUG:root:Bad order:1 12.0 85.0
+DEBUG:root:Bad order:1 12.0 86.0
+DEBUG:root:Bad order:1 12.0 86.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
 DEBUG:root:Result: Sequence: Spread Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -31,567 +51,12 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 55.0 131.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 60.0 123.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 65.0 123.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 70.0 123.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 75.0 128.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 80.0 120.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 80.0 120.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 85.0 125.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 85.0 125.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 90.0 130.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 90.0 130.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 17 36.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 17 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 31.0 40.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 31.0 40.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 36.0 67.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 36.0 67.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 41.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 41.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 46.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 46.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 51.0 82.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 51.0 82.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 56.0 87.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 56.0 87.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 61.0 92.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 61.0 92.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 12 57.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 14.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 14.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 18 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 8.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 8.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 13.0 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 13.0 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 18.0 22.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 18.0 22.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 23.0 24.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 23.0 24.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 18 26.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:17 0 29.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:17 12 82.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Order:12 6 64.0
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Order:1 18 6.0
+DEBUG:root:Bad order:1 5.0 14.0
+DEBUG:root:Bad order:1 5.0 14.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
 DEBUG:root:Result: Sequence: Spread Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -604,13 +69,12 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:12 69.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Bad order:1 4.0 6.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
+DEBUG:root:Result: Sequence: Spread Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
@@ -621,159 +85,12 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:12 74.0 82.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 13.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Bad order:1 3.0 6.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
+DEBUG:root:Result: Sequence: Spread Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 14.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 17.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 12.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 12.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 18 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 6.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 6.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 11.0 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 11.0 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 16.0 22.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 16.0 22.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
@@ -784,13 +101,12 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 21.0 24.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Bad order:1 2.0 6.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
+DEBUG:root:Result: Sequence: Spread Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
@@ -801,1014 +117,10 @@ DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
 DEBUG:root:Executing:Sequence: Spread Strategy
 DEBUG:root:Executing:Check: if_neutral_planet_available
 DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 18 26.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:6 0 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 10.0 12.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 10.0 12.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 13.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 7.0 14.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 7.0 14.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 12.0 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 12.0 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:6 0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 0 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 16.0 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 16.0 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 0 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 11 79.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 11 64.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 46.0 54.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 46.0 54.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 51.0 56.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 51.0 56.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 17 57.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 17 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 13 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 21.0 30.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 21.0 30.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 13.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 6.0 14.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 6.0 14.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 11.0 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 11.0 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 13 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 10.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 10.0 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 15.0 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 15.0 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 53.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 53.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 56.0 67.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 56.0 67.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 59.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 59.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 62.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 62.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 15 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 15 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 15 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 20.0 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 20.0 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 21.0 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:6 21.0 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 2 63.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 2 68.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 15 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:11 12.0 23.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:11 12.0 23.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 11.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 28.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 28.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 31.0 41.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 31.0 41.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 34.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 34.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 37.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 37.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 40.0 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 40.0 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 17.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 19 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
-DEBUG:root:Result: Sequence: Offensive Strategy -> Success
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 18.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 18.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 23.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 23.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 28.0 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 28.0 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 33.0 53.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 33.0 53.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 38.0 56.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 38.0 56.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 43.0 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 43.0 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 48.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 48.0 62.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 53.0 65.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 53.0 65.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 58.0 68.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Order:12 21 106.0
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Success
+DEBUG:root:Executing:Action: spread_to_multiple_neutral_planets
+DEBUG:root:Order:1 17 6.0
+DEBUG:root:Bad order:1 1.0 6.0
+DEBUG:root:Result: Action: spread_to_multiple_neutral_planets -> Success
 DEBUG:root:Result: Sequence: Spread Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1817,89 +129,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 63.0 71.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 63.0 71.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 68.0 74.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 68.0 74.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 73.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 73.0 77.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 78.0 80.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 78.0 80.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 0 83.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1908,9 +139,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 9 50.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1919,9 +149,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 9 51.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1930,9 +159,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 0 71.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1941,9 +169,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 0 74.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1952,9 +179,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:13 16 45.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1963,9 +189,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 9 55.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1974,9 +199,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 16 54.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1985,9 +209,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 16 66.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -1996,9 +219,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:9 20 36.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2007,9 +229,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:12 14 51.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2018,9 +239,9 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 14 59.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:1 17 55.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2029,9 +250,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 14 34.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2040,169 +260,10 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 17.0 36.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 17.0 36.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 20.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 20.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 23.0 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 23.0 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 26.0 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 26.0 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 29.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 29.0 38.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 32.0 41.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 32.0 41.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 35.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 35.0 44.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 38.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 38.0 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 0 37.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:11 17 31.0
+DEBUG:root:Order:12 17 27.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2211,9 +272,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 0 40.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2222,69 +282,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 38.0 43.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 38.0 43.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 43.0 46.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 43.0 46.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 48.0 49.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 48.0 49.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 0 52.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2293,9 +292,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 15.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2304,9 +302,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 16.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2315,9 +312,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 17.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2326,9 +322,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 18.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2337,9 +332,11 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 19.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:11 2 38.0
+DEBUG:root:Order:17 2 30.0
+DEBUG:root:Bad order:17 22.0 45.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2348,9 +345,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 20 20.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2359,89 +355,9 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 44.0 54.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 44.0 54.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 47.0 57.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 47.0 57.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 50.0 60.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 50.0 60.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 53.0 63.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:0 53.0 63.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 22 66.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:17 2 40.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2450,9 +366,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 40.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2461,9 +376,10 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 22 75.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:1 9 65.0
+DEBUG:root:Order:12 9 45.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2472,49 +388,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:9 71.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:9 71.0 72.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:9 72.0 75.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:9 72.0 75.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
-DEBUG:root:Finish turn
-
-DEBUG:root:Executing:Selector: High Level Ordering of Strategies
-DEBUG:root:Executing:Sequence: Offensive Strategy
-DEBUG:root:Executing:Check: have_largest_fleet
-DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 5 31.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2523,9 +398,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 5 32.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2534,9 +408,43 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Strategy
+DEBUG:root:Executing:Check: have_largest_fleet
+DEBUG:root:Result: Check: have_largest_fleet -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:17 9 35.0
+DEBUG:root:Bad order:17 33.0 40.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Strategy
+DEBUG:root:Executing:Check: have_largest_fleet
+DEBUG:root:Result: Check: have_largest_fleet -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Strategy
+DEBUG:root:Executing:Check: have_largest_fleet
+DEBUG:root:Result: Check: have_largest_fleet -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
 DEBUG:root:Order:11 5 33.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Bad order:11 21.0 53.0
+DEBUG:root:Order:18 5 43.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2545,9 +453,11 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:1 6 47.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:2 5 34.0
+DEBUG:root:Bad order:2 33.0 36.0
+DEBUG:root:Order:12 5 46.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2556,9 +466,11 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 5 35.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:1 6 33.0
+DEBUG:root:Order:2 5 35.0
+DEBUG:root:Bad order:2 3.0 37.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2567,9 +479,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:2 5 36.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2578,9 +489,9 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:9 5 42.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:11 5 37.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2589,9 +500,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:0 5 41.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2600,9 +510,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 5 39.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2611,9 +520,8 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Order:11 5 40.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
 DEBUG:root:Result: Sequence: Offensive Strategy -> Success
 DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
@@ -2622,55 +530,53 @@ DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 44.0 53.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Bad order:1 44.0 53.0
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:1 6 39.0
+DEBUG:root:Order:9 6 61.0
+DEBUG:root:Bad order:9 4.0 51.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Order:12 6 40.0
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
 DEBUG:root:Executing:Selector: High Level Ordering of Strategies
 DEBUG:root:Executing:Sequence: Offensive Strategy
 DEBUG:root:Executing:Check: have_largest_fleet
 DEBUG:root:Result: Check: have_largest_fleet -> Success
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Sequence: Offensive Strategy -> Failure
-DEBUG:root:Executing:Sequence: Spread Strategy
-DEBUG:root:Executing:Check: if_neutral_planet_available
-DEBUG:root:Result: Check: if_neutral_planet_available -> Success
-DEBUG:root:Executing:Action: spread_to_weakest_neutral_planet
-DEBUG:root:Result: Action: spread_to_weakest_neutral_planet -> Failure
-DEBUG:root:Result: Sequence: Spread Strategy -> Failure
-DEBUG:root:Executing:Action: repell_neighbors_if_stronger
-DEBUG:root:Result: Action: repell_neighbors_if_stronger -> Failure
-DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Failure
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Strategy
+DEBUG:root:Executing:Check: have_largest_fleet
+DEBUG:root:Result: Check: have_largest_fleet -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
+DEBUG:root:Finish turn
+
+DEBUG:root:Executing:Selector: High Level Ordering of Strategies
+DEBUG:root:Executing:Sequence: Offensive Strategy
+DEBUG:root:Executing:Check: have_largest_fleet
+DEBUG:root:Result: Check: have_largest_fleet -> Success
+DEBUG:root:Executing:Action: attack_weak_enemy_planets
+DEBUG:root:Result: Action: attack_weak_enemy_planets -> Success
+DEBUG:root:Result: Sequence: Offensive Strategy -> Success
+DEBUG:root:Result: Selector: High Level Ordering of Strategies -> Success
 DEBUG:root:Finish turn
 
